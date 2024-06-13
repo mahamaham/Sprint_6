@@ -1,11 +1,13 @@
 import allure
-
-from locators.home_page_locators import (HomePageHeaderLocators,
-                                         HomePageLocators)
 from pages.base_page import BasePage
+from locators.home_page_locators import (
+    HomePageHeaderLocators,
+    HomePageLocators
+)
 
 
 class HomePageHeader(BasePage):
+
     @allure.step('Клик по логотипу Яндекса')
     def yandex_logo_click(self):
         self.click_button(HomePageHeaderLocators.logo_yandex)

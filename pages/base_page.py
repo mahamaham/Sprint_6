@@ -6,6 +6,7 @@ class BasePage:
 
     def __init__(self, driver):
         self.driver = driver
+        self.wait = WebDriverWait(self.driver, 15)
 
     # Получить текущий URL
     def get_current_url(self):
